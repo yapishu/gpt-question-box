@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  gpt:
+    build:
+      context: .
+    user: root
+    container_name: gpt
+    ports:
+      - 8090:8090
+    environment:
+      - OPENAI_API_KEY
